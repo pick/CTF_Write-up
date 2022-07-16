@@ -21,6 +21,7 @@ Reversing
 
 1. The zip file we downloaded contains a file with the extension '.crx'. Quick Google search tells us that this is a _Chrome extension file_. 
 2. We can visit [Ezyzip.com](https://www.ezyzip.com/open-extract-crx-file.html) to view the contents of the extension.
+3. The extracted contents can be viewed in [Extracted/](Extracted/)
 
 
 
