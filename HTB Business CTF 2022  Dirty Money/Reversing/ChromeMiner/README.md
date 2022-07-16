@@ -24,6 +24,20 @@ Reversing
 3. The extracted contents can be viewed in [Extracted](Extracted/)
 4. Investigating these files background.js seems to contain a sort of cipher. The file is also using Javascript obfuscation which can be made readable by using [dcode.fr](https://www.dcode.fr/javascript-unobfuscator). Deobfuscated file can be viewed [deobfuscated_background.js](deobfuscated_background.js/)
 5. In order to determine the way the strings are built I have created a python script. [ChromeMiner.py](ChromeMiner.py/)
+6. Next we get a series of partial words, a clue saying "\_NOT_THE_SECRET_\", an encryption method, and a long hexadecimal string.
+![alt text](https://i.imgur.com/aJKpnm7.png)
 
+ Looking through the other text for hints on what this string might be, I was able to spot this.
+"name AES-CBC" => Probably means that the string is encrypted with AES-CBC
+If we goto [devglan.com](https://www.devglan.com/online-tools/aes-encryption-decryption) we can see options to encrypt and decrypt with AES-ECB and AES-CBC
 
+We can enter the encrypted string to be decrypted.
+Select Hex as the "Input Text Format" because this is a hexadecimal string 
+![alt text](https://i.imgur.com/aIveRWB.png)
+Ref: [boxentriq.com](https://www.boxentriq.com/code-breaking/cipher-identifier)
+
+Next we can select "CBC" as the Cipher Mode of Decryption
+
+Lastly we need to enter a key. Looking through the generated text again, ```_NOT_THE_SECRET_``` is generated twice. I decided to try this as my key and was suprised to see this as a result.
+![alt text](https://i.imgur.com/05kBqnX.png)
 
