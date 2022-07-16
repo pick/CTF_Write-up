@@ -1,13 +1,11 @@
 # ChromeMiner
 
 ##### Table of Contents  
-[Challenge Details](#headers)  
-[Solution Write-up](#headers)  
-...snip...    
-<a name="Challenge description "/>
+1. [Challenge Details](#headers)  
+2. [Solution Write-up](#headers)  
 ## Headers
 
-## Challenge description 
+## 1. Challenge Details 
 Discurd has filed a DMCA violation regarding a popular browser extension claiming to be conducting VIP giveaways on the company's product. The addon store has since taken down the extension to prevent any potential browser cryptomining malware from being distributed in the marketplace. Could you investigate what the 'Discurd Nitro Giveaway' addon does exactly?
 
 ### Challenge Category
@@ -22,6 +20,7 @@ Reversing
 ## Solution Write-up
 
 1. The zip file we downloaded contains a file with the extension '.crx'. Quick Google search tells us that this is a _Chrome extension file_. 
+2. We can visit [Ezyzip.com](https://www.ezyzip.com/open-extract-crx-file.html) to view the contents of the extension.
 
 
 
