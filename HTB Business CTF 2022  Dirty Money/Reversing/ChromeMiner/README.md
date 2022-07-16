@@ -41,3 +41,9 @@ Next we can select "CBC" as the Cipher Mode of Decryption
 Lastly we need to enter a key. Looking through the generated text again, ```_NOT_THE_SECRET_``` is generated twice. I decided to try this as my key and was suprised to see this as a result.
 ![alt text](https://i.imgur.com/05kBqnX.png)
 
+Looking at the end of the decrypted text I was able to tell that this was the correct string that needed to be decrypted. A little more playing around with and I remembered that it was generated twice. So I decided to fill out the IV field with ```_NOT_THE_SECRET_``` as well.
+
+![alt_text](https://i.imgur.com/H9SPHyU.png)
+
+Voila! Our flag was ```HTB{__mY_vRy_owN_CHR0me_M1N3R__}```
+
