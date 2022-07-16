@@ -21,8 +21,9 @@ Reversing
 
 1. The zip file we downloaded contains a file with the extension '.crx'. Quick Google search tells us that this is a _Chrome extension file_. 
 2. We can visit [Ezyzip.com](https://www.ezyzip.com/open-extract-crx-file.html) to view the contents of the extension.
-3. The extracted contents can be viewed in [Extracted/](Extracted/)
-4. Investigating these files background.js seems to contain a sort of cipher. In order to determine the way the strings are built I have created a python script. [ChromeMiner.py/](ChromeMiner.py/)
+3. The extracted contents can be viewed in [Extracted](Extracted/)
+4. Investigating these files background.js seems to contain a sort of cipher. The file is also using Javascript obfuscation which can be made readable by using [dcode.fr](https://www.dcode.fr/javascript-unobfuscator). 
+5.In order to determine the way the strings are built I have created a python script. [ChromeMiner.py](ChromeMiner.py/)
 
 
 
