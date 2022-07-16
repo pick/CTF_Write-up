@@ -26,8 +26,10 @@ Reversing
 6. Next we get a series of partial words, a clue saying ```_NOT_THE_SECRET_```, an encryption method, and a long hexadecimal string.
 ![alt text](https://i.imgur.com/aJKpnm7.png)
 
- Looking through the other text for hints on what this string might be, I was able to spot this.
+Looking through the other text for hints on what this string might be, I was able to spot this.
+  
 "name AES-CBC" => Probably means that the string is encrypted with AES-CBC
+  
 If we goto [devglan.com](https://www.devglan.com/online-tools/aes-encryption-decryption) we can see options to encrypt and decrypt with AES-ECB and AES-CBC
 
 We can enter the encrypted string to be decrypted.
@@ -44,5 +46,5 @@ Looking at the end of the decrypted text I was able to tell that this was the co
 
 ![alt_text](https://i.imgur.com/H9SPHyU.png)
 
-Voila! Our flag was ```HTB{__mY_vRy_owN_CHR0me_M1N3R__}```
+Voila! Our flag is ```HTB{__mY_vRy_owN_CHR0me_M1N3R__}```
 
