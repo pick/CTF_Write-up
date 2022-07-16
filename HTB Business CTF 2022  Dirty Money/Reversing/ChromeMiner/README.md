@@ -12,7 +12,7 @@ Discurd has filed a DMCA violation regarding a popular browser extension claimin
 Reversing
 
 ### Challenge Points
-325 (easy)
+325 - (easy)
 
 ### CTF Date
 07/15/2022 - 07/17/2022
