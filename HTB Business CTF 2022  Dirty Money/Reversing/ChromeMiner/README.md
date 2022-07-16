@@ -24,7 +24,7 @@ Reversing
 3. The extracted contents can be viewed in [Extracted](Extracted/)
 4. Investigating these files background.js seems to contain a sort of cipher. The file is also using Javascript obfuscation which can be made readable by using [dcode.fr](https://www.dcode.fr/javascript-unobfuscator). Deobfuscated file can be viewed [deobfuscated_background.js](deobfuscated_background.js/)
 5. In order to determine the way the strings are built I have created a python script. [ChromeMiner.py](ChromeMiner.py/)
-6. Next we get a series of partial words, a clue saying "\_NOT_THE_SECRET_\", an encryption method, and a long hexadecimal string.
+6. Next we get a series of partial words, a clue saying ```_NOT_THE_SECRET_```, an encryption method, and a long hexadecimal string.
 ![alt text](https://i.imgur.com/aJKpnm7.png)
 
  Looking through the other text for hints on what this string might be, I was able to spot this.
